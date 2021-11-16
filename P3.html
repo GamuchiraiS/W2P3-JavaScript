@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html > 
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+<script type="text/javascript">
+	//From the Fibonacci sequence the first and second
+    //number are always going to be 
+    //0 and 1 so we code that
+    var firstNum = 0;
+    var secondNum = 1;
+    var thirdNum;
+    var numsShown;
+    numsShown = prompt("How many numbers from the Fibonacci series must be shown? ");
+    console.log(firstNum + "\n" + secondNum); //prints 1st and 2nd num
+
+    for (var i = 2; i < numsShown; i++){
+    	thirdNum = firstNum + secondNum;
+    	console.log(thirdNum + "");
+    	firstNum = secondNum;
+    	secondNum = thirdNum;
+    }
+</script>
+</head>
+<body>	
+</body>	
+</html>	
